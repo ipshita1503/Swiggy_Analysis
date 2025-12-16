@@ -13,8 +13,6 @@ SELECT
 	SUM(CASE WHEN Rating_Count is NULL THEN 1 ELSE 0 END) as null_rating_count
 from data;
 
--- 0) Disable safe update mode just for this session
-SET SQL_SAFE_UPDATES = 0;
 
 ALTER TABLE `practice`.`swiggy_data`
 ADD COLUMN `Order_Date_new` DATE NULL;
@@ -27,9 +25,6 @@ DROP COLUMN `Order_Date`;
 
 ALTER TABLE `practice`.`swiggy_data`
 CHANGE COLUMN `Order_Date_new` `Order_Date` DATE NULL DEFAULT NULL;
-
--- 5) (Optional) Re-enable safe updates
-SET SQL_SAFE_UPDATES = 1;
 
 
 -- SELECT * FROM data
