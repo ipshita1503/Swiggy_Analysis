@@ -44,7 +44,3 @@ Tools & Technologies
 
 Results  
 Developed a reusable SQL pipeline for analytics-ready data, improved data quality by 100%, and achieved 60% faster query execution through proper schema design and indexing. 
-
-
-
-Would you like me to include a **Power BI/visualization section** in this README to make it portfolio-ready for data analyst roles?
